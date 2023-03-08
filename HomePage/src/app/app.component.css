@@ -4,7 +4,7 @@
 }
 
 .btn {
-    background-color: crimson;
+    background-color: rgb(20, 50, 220);
     border-radius: 2px;
     color: white;
     font-weight: bold;
@@ -12,25 +12,116 @@
     padding-right: 20px;
 }
 
-.form-control {
-    border-radius: 20px;
-}
-
-footer {
-    width: 100%;
-}
-.card {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
-}
-
-
 
 @media screen and (max-width: 575px) {
     svg#rocket-smoke {
         display: none;
         visibility: hidden;
     }
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-4 {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+
+.card-effect {
+    
+    box-shadow: 5px 6px 5px 7px rgba(227, 219, 219, 0.75);
+    -webkit-box-shadow: 5px 6px 5px 7px rgba(227, 219, 219, 0.75);
+    -moz-box-shadow: 5px 6px 5px 7px rgba(227, 219, 219, 0.75);
+}
+
+.card-effect:hover {
+    box-shadow: none;
+    
+    transform: scale(1.1);
+    transition: all linear 200ms;
+    z-index: 2;
+    cursor: pointer;
+        
+}
+.effect {
+     box-shadow: none;
+
+     transform: scale(1.1);
+     transition: all linear 200ms;
+     z-index: 2;
+     cursor: pointer;
+
+ }
+
+#wrapper {
+    position: relative;
+    left: 50px;
+   
+}
+#flexbox{
+    position: relative;
+    left: 500px;
+}
+.iconbox {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+    font-size: 32px;
+    border-radius: 100px;
+    flex: none;
+}
+
+
+.service {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.service::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: rgb(136, 136, 250);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+
+.service:hover .iconbox {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+.service:hover h5,
+.service:hover p {
+    color: var(--white);
+    ;
+}
+
+.service:hover::after {
+    opacity: 1;
+    top: 0;
+}
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--c-dark);
 }

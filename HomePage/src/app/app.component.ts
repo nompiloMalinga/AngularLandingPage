@@ -13,4 +13,6 @@ export class AppComponent {
   faFacebook = faFacebook;
   faInstagramSquare = faInstagramSquare;
   faLinkedin = faLinkedin;
+
+  
 }

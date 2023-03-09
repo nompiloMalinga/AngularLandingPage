@@ -127,14 +127,14 @@ h6,
 }
 .image-container {
     position: relative;
-    top: 0;
-    left: 0;
+    top: 40px;
+    left: 60px;
 }
 
 .image2 {
     position: relative;
     top: -80px;
-    left: 100px;
+    left: 5px;
     width: 80%;
     height: 100%;
 }
@@ -300,154 +300,7 @@ h4 {
     border-radius: 50%;
 }
 
-/* star shaped shine pattern */
-.shine {
-    position: absolute;
-    top: 3px;
-    left: 6px;
-    width: 1px;
-    height: 16px;
-    background: #fff;
-    transform: rotate(15deg);
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.75);
-    animation: shine 10s infinite;
-}
 
-.shine:before,
-.shine:after {
-    content: '';
-    display: block;
-    position: absolute;
-}
-
-.shine:before {
-    top: 2px;
-    left: -2px;
-    width: 1px;
-    height: 16px;
-    background: #fff;
-    transform: rotate(-90deg);
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.75);
-}
-
-.shine:after {
-    top: 6px;
-    left: -2px;
-    width: 5px;
-    height: 5px;
-    background: #fff;
-    transform: rotate(45deg);
-    box-shadow: 0 0 8px 5px rgba(255, 255, 255, 0.75);
-}
-
-/* reflective line */
-.light {
-    position: absolute;
-    width: 48px;
-    height: 48px;
-    border-radius: 100%;
-    overflow: hidden;
-}
-
-.light:before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 2px;
-    height: 80px;
-    top: -75%;
-    left: 0;
-    transform: rotate(45deg);
-    background: rgba(255, 255, 255, 0.5);
-    animation: sheen2 7s infinite;
-}
-
-/* animates orb glow */
-@keyframes orb {
-
-    0%,
-    100% {
-        box-shadow: 0 0 5px 2px #8FFFCF;
-    }
-
-    50% {
-        box-shadow: 0 0 24px 4px #8FFFCF;
-    }
-}
-
-/* rotates shine */
-@keyframes shine {
-    0% {
-        opacity: 0;
-    }
-
-    34% {
-        opacity: 0;
-        transform: rotate(15deg);
-    }
-
-    40% {
-        opacity: 0.6;
-        transform: rotate(620deg);
-    }
-
-    48%,
-    100% {
-        opacity: 0;
-        transform: rotate(635deg);
-    }
-}
-
-/* moves light reflection */
-@keyframes sheen2 {
-
-    0%,
-    100% {
-        top: -75%;
-        left: 15%;
-        opacity: 0;
-        width: 2px;
-    }
-
-    1% {
-        opacity: 1;
-    }
-
-    10% {
-        width: 24px;
-    }
-
-    11%,
-    18% {
-        top: 75%;
-        left: 50%;
-        width: 2px;
-        opacity: 0;
-    }
-
-    20% {
-        top: -75%;
-        left: 15%;
-        opacity: 0;
-        width: 1px;
-    }
-
-    21% {
-        opacity: 0.75;
-    }
-
-    30% {
-        width: 6px;
-    }
-
-    31%,
-    98% {
-        top: 75%;
-        left: 50%;
-        width: 2px;
-        opacity: 0;
-    }
-}
 #move{
     text-align: center;
     float: left;
